@@ -1,13 +1,13 @@
 
 import json,urllib.request
 
-url = 'https://opendata.cwa.gov.tw/api/v1/rest/datastore/F-C0032-001?Authorization=CWA-225D5071-2B74-43BD-BB6D-39CC28DBF8E6&format=JSON'
+url = 'https://opendata.cwa.gov.tw/api/v1/rest/datastore/F-C0032-001?Authorization=bbbbbbbbbbbbbbbbbbbbbbbbbb&format=JSON'
 
 data = urllib.request.urlopen(url).read()
 output = json.loads(data)
 location=output['records']['location']
 
-
+ 
 for i in location:
     print(f'{i}')
 
